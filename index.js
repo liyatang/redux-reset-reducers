@@ -10,4 +10,6 @@ export default function reduxResetReducers(reducers, resetType = 'RESET_STATE'){
             return reducer(state, action);
         }
     });
+
+    return newReducers;
 }
